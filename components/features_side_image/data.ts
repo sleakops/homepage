@@ -6,19 +6,18 @@ import { IoPeopleSharp } from 'react-icons/io5'
 
 export const features = [
   {
-    name: 'Optimización de tiempos en equipos IT',
-    description: 'Convertir un trabajo de meses en solo minutos. Automatizamos todo el trabajo repetivo de operaciones, brindando mas libertad a los desarrolladores para la puesta a punto de su trabajo y desarrollo.',
+    name: 'Time Optimization in IT Teams',
+    description: 'We help companies to reduce the time of work from months to minutes through automatization of all the repetitive work in the operations.',
     icon: RiTimerFlashFill,
   },
   {
-    name: 'Infra y procesos estandarizados',
-    description:
-      'Creamos toda la infraestructura bajo el mismo estandar para poder crecer de manera correcta. Utilizando las mejores herramientas y prácticas conocidas.',
+    name: 'Standardized Process',
+    description: 'Build all your infrastructure with the same standard to grow using the best practices and tools.',
     icon: GoVerified,
   },
   {
-    name: 'Escaces de recursos',
-    description: 'Sabemos la dificultad de conseguir recursos que desarrollen y operen infra hoy en día. Uno de nuestros objetivos es optimizar el tiempo de trabajo de devops, cubriendo este importante problema en la industria.',
+    name: 'Lack of Resources',
+    description: 'Today, finding expert resources to develop and manage infrastructure is a really hard job. One of our goals is to optimize and reduce the working time of the DevOps, to minimize this problem in each of our clients.',
     icon: IoPeopleSharp,
   },
 ]

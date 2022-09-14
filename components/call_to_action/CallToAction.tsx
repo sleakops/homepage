@@ -6,9 +6,9 @@ export const CallToAction = () => (
     <Container py={{ base: '16', md: '24' }}>
       <Stack spacing={{ base: '8', md: '10' }}>
         <Stack spacing={{ base: '4', md: '5' }} align="center">
-          <Heading size={useBreakpointValue({ base: 'sm', md: 'md' })}>Listo para acelerar?</Heading>
+          <Heading size={useBreakpointValue({ base: 'sm', md: 'md' })}>Let's Talk</Heading>
           <Text color="on-accent-muteed" maxW="2xl" textAlign="center" fontSize="xl">
-            Estamos anciosos por poder ayudar y acompañar en el crecimiento de tu proyecto.
+            Unleash the full potential of your app and manage your infra efficiently
           </Text>
         </Stack>
         <Stack spacing="3" direction={{ base: 'column', sm: 'row' }} justify="center">
@@ -16,7 +16,7 @@ export const CallToAction = () => (
             Learn more
           </Button> */}
           <Button variant="primary-on-accent" size="lg">
-            Book a Demo
+            BOOK A DEMO
           </Button>
         </Stack>
       </Stack>

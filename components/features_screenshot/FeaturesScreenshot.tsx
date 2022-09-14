@@ -19,15 +19,15 @@ export const FeaturesScreenshot = () => {
           <Stack spacing={{ base: '8', md: '10' }} align="center">
             <Stack spacing={{ base: '4', md: '5' }} textAlign="center">
               <Stack spacing="3">
-                <Text fontSize={{ base: 'sm', md: 'md' }} fontWeight="semibold" color="accent">
+                {/* <Text fontSize={{ base: 'sm', md: 'md' }} fontWeight="semibold" color="accent">
                   Demo
-                </Text>
+                </Text> */}
                 <Heading size={useBreakpointValue({ base: 'sm', md: 'md' })}>
-                  Te mostramos un adelanto
+                  Unlock the Potential
                 </Heading>
               </Stack>
               <Text fontSize={{ base: 'lg', md: 'xl' }} maxW="2xl" color="muted">
-                Asi es poner a andar tu infraestructura en tu nube sin perder el control.
+                You can get your Infra running in the Cloud without losing control.
               </Text>
             </Stack>
           </Stack>

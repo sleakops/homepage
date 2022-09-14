@@ -21,14 +21,14 @@ export const FeaturesSideImage = () => (
         <Stack spacing={{ base: '4', md: '5' }} maxW="3xl">
           <Stack spacing="3">
             <Text fontSize={{ base: 'sm', md: 'md' }} fontWeight="semibold" color="accent">
-              Beneficios
+              Benefits
             </Text>
             <Heading size={useBreakpointValue({ base: 'sm', md: 'md' })}>
-              Compartimos nuestra solución
+              Powered By Craftech
             </Heading>
           </Stack>
           <Text color="muted" fontSize={{ base: 'lg', md: 'xl' }}>
-            By <a href="https://craftech.io">Craftech</a>. Sabemos de infra y esta plataforma es una solución basada en nuestro conocimiento y experiencias de trabajar en proyectos de distintas escala.
+            SleakOps is part of <a href="https://craftech.io">Craftech</a>, a company specializing in DevOps and Cloud Engineering. We are experts in infrastructure and we based our platform in our knowledge and expertise develop through our experiences in different projects. 
           </Text>
         </Stack>
         <Stack direction={{ base: 'column', md: 'row' }} spacing={{ base: '12', lg: '16' }}>
@@ -50,14 +50,14 @@ export const FeaturesSideImage = () => (
                     </Text>
                     <Text color="muted">{feature.description}</Text>
                   </Stack>
-                  <Button
+                  {/* <Button
                     variant="link"
                     colorScheme="blue"
                     rightIcon={<FiArrowRight fontSize="1.25rem" />}
                     alignSelf="start"
                   >
                     Read more
-                  </Button>
+                  </Button> */}
                 </Stack>
               </Stack>
             ))}

@@ -22,12 +22,12 @@ export const FeaturesList = () => (
               Features
             </Text>
             <Heading size={useBreakpointValue({ base: 'sm', md: 'md' })}>
-              SleakOps, encontraste tu solución!
+              Discover SleakOps
             </Heading>
           </Stack>
-          <Text color="muted" fontSize={{ base: 'lg', md: 'xl' }} maxW="3xl">
+          {/* <Text color="muted" fontSize={{ base: 'lg', md: 'xl' }} maxW="3xl">
             Estas son las principales características que nuestra plataforma ofrece. Para conocer todos los detalles técnicos te recomendamos seguir por aca.
-          </Text>
+          </Text> */}
         </Stack>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} columnGap={8} rowGap={{ base: 10, md: 16 }}>
           {features.map((feature) => (

@@ -4,43 +4,68 @@ import {
   ButtonGroup,
   Container,
   HStack,
-  IconButton,
   useBreakpointValue,
   useColorModeValue,
+  useDisclosure,
+  Drawer,
+  DrawerContent,
+  DrawerOverlay,
 } from '@chakra-ui/react'
 import * as React from 'react'
-import { FiMenu } from 'react-icons/fi'
+import { ToggleButton } from './ToggleButton'
+import { Sidebar } from './Sidebar'
+
 import { Logo } from './Logo'
-import { ResourcesPopover } from './ResourcesPopover'
+import Link from 'next/link'
 
 export const Navbar = () => {
   const isDesktop = useBreakpointValue({ base: false, lg: true })
+  const { isOpen, onToggle, onClose } = useDisclosure()
+
   return (
-    // <Box as="section" minH="md">
     <Box as="section">
       <Box as="nav" bg="bg-surface" boxShadow={useColorModeValue('sm', 'sm-dark')}>
         <Container py={{ base: '4', lg: '5' }}>
           <HStack spacing="10" justify="space-between">
+            {/* <Link href="/" passHref> */}
             <Logo />
+            {/* </Link> */}
             {isDesktop ? (
               <>
                 <ButtonGroup variant="link" spacing="8">
-                  <Button>Product</Button>
-                  <Button>Pricing</Button>
-                  {/* <ResourcesPopover /> */}
-                  <Button>Docs</Button>
+                  <Button>How it works</Button>
+                  <Link href="/contact" passHref>
+                    <Button>Contact</Button>
+                  </Link>
+                  <Link href="https://docs.sleakops.com" passHref>
+                    <Button>Docs</Button>
+                  </Link>
                 </ButtonGroup>
-                <HStack spacing="3">
-                  <Button variant="ghost">Sign in</Button>
-                  <Button variant="primary">Sign up</Button>
+                <HStack spacing="3">                
+                <Link href="https://console.sleakops.com/login" passHref>
+                  <Button variant="ghost">Login</Button>
+                </Link>
+                  {/* <Button variant="primary">Sign up</Button> */}
                 </HStack>
               </>
             ) : (
-              <IconButton
-                variant="ghost"
-                icon={<FiMenu fontSize="1.25rem" />}
-                aria-label="Open Menu"
-              />
+              <>
+                <ToggleButton isOpen={isOpen} aria-label="Open Menu" onClick={onToggle} />
+                <Drawer
+                  isOpen={isOpen}
+                  placement="left"
+                  onClose={onClose}
+                  isFullHeight
+                  preserveScrollBarGap
+                  // Only disabled for showcase
+                  trapFocus={false}
+                >
+                  <DrawerOverlay />
+                  <DrawerContent>
+                    <Sidebar />
+                  </DrawerContent>
+                </Drawer>
+              </>
             )}
           </HStack>
         </Container>
