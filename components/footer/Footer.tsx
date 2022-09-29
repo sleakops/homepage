@@ -85,12 +85,12 @@ export const Footer = () => (
       <ButtonGroup variant="ghost">
         <IconButton
           as="a"
-          href="#"
+          href="https://www.linkedin.com/company/sleakops/"
           aria-label="LinkedIn"
           icon={<FaLinkedin fontSize="1.25rem" />}
         />
-        <IconButton as="a" href="#" aria-label="GitHub" icon={<FaGithub fontSize="1.25rem" />} />
-        <IconButton as="a" href="#" aria-label="Twitter" icon={<FaTwitter fontSize="1.25rem" />} />
+        {/* <IconButton as="a" href="#" aria-label="GitHub" icon={<FaGithub fontSize="1.25rem" />} />
+        <IconButton as="a" href="#" aria-label="Twitter" icon={<FaTwitter fontSize="1.25rem" />} /> */}
       </ButtonGroup>
     </Stack>
   </Container>
