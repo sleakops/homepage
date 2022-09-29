@@ -1,5 +1,15 @@
-import { Box, Button, Container, Heading, Stack, Text, useBreakpointValue } from '@chakra-ui/react'
 import * as React from 'react'
+import { 
+  Box,
+  Button,
+  Container,
+  Heading,
+  Stack,
+  Text,
+  useBreakpointValue,
+} from '@chakra-ui/react'
+import { Calendly } from '../calendly_button/CalendlyButton'
+
 
 export const CallToAction = () => (
   <Box as="section" bg="bg-accent" color="on-accent">
@@ -15,9 +25,9 @@ export const CallToAction = () => (
           {/* <Button variant="secondary-on-accent" size="lg">
             Learn more
           </Button> */}
-          <Button variant="primary-on-accent" size="lg">
-            BOOK A DEMO
-          </Button>
+
+          <Calendly variant="primary-on-accent" size="lg"/>
+
         </Stack>
       </Stack>
     </Container>

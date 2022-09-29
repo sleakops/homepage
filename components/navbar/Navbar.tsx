@@ -27,13 +27,18 @@ export const Navbar = () => {
       <Box as="nav" bg="bg-surface" boxShadow={useColorModeValue('sm', 'sm-dark')}>
         <Container py={{ base: '4', lg: '5' }}>
           <HStack spacing="10" justify="space-between">
-            {/* <Link href="/" passHref> */}
-            <Logo />
-            {/* </Link> */}
+            <Link href="/" passHref>
+              <a href="/">
+                <Logo />
+              </a>
+            </Link>
             {isDesktop ? (
               <>
                 <ButtonGroup variant="link" spacing="8">
-                  <Button>How it works</Button>
+                  {/* <Button>How it works</Button> */}
+                  <Link href="/" passHref>
+                    <Button>Home</Button>
+                  </Link>
                   <Link href="/contact" passHref>
                     <Button>Contact</Button>
                   </Link>

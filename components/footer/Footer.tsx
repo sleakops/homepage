@@ -11,6 +11,7 @@ import {
 import * as React from 'react'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { Logo } from './Logo'
+import Link from 'next/link'
 
 export const Footer = () => (
   <Container as="footer" role="contentinfo">
@@ -29,7 +30,7 @@ export const Footer = () => (
         spacing={{ base: '12', md: '8' }}
       >
         <Stack direction="row" spacing="8">
-          <Stack spacing="4" minW="36" flex="1">
+          {/* <Stack spacing="4" minW="36" flex="1">
             <Text fontSize="sm" fontWeight="semibold" color="subtle">
               Product
             </Text>
@@ -38,19 +39,22 @@ export const Footer = () => (
               <Button variant="link">Pricing</Button>
               <Button variant="link">Use Cases</Button>
             </Stack>
-          </Stack>
-          <Stack spacing="4" minW="36" flex="1">
+          </Stack> */}
+          {/* <Stack spacing="4" minW="36" flex="1">
             <Text fontSize="sm" fontWeight="semibold" color="subtle">
               Legal
             </Text>
             <Stack spacing="3" shouldWrapChildren>
-              <Button variant="link">Privacy</Button>
+              <Link href="/privacy-policy" passHref>
+                <Button variant="link">Privacy and Policy</Button>
+              </Link>
               <Button variant="link">Terms</Button>
               <Button variant="link">License</Button>
             </Stack>
-          </Stack>
+          </Stack> */}
         </Stack>
-        <Stack spacing="4">
+
+        {/* <Stack spacing="4">
           <Text fontSize="sm" fontWeight="semibold" color="subtle">
             Stay up to date
           </Text>
@@ -60,7 +64,8 @@ export const Footer = () => (
               Subscribe
             </Button>
           </Stack>
-        </Stack>
+        </Stack> */}
+
       </Stack>
     </Stack>
     <Divider />
@@ -72,7 +77,10 @@ export const Footer = () => (
       align="center"
     >
       <Text fontSize="sm" color="subtle">
-        &copy; {new Date().getFullYear()} SleakOps. All rights reserved.
+        &copy; {new Date().getFullYear()} SleakOps. All rights reserved. &nbsp;
+        <Link href="/privacy-policy" passHref>
+          <a href="/privacy-policy">Privacy and Policy</a>
+        </Link>
       </Text>
       <ButtonGroup variant="ghost">
         <IconButton

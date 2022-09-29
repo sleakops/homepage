@@ -31,7 +31,7 @@ export const ContactForm = () => {
                   Contact
                 </Text>
                 <Heading size={useBreakpointValue({ base: 'sm', md: 'md' })}>
-                  Book a demo
+                  Contact us
                 </Heading>
               </Stack>
               <Text fontSize={{ base: 'lg', md: 'xl' }} maxW="2xl" color="muted">

@@ -4,7 +4,7 @@ import { Clients } from '../components/clients/Clients'
 import { FeaturesList } from '../components/features_list/FeaturesList'
 import { FeaturesScreenshot } from '../components/features_screenshot/FeaturesScreenshot'
 import { FeaturesSideImage } from '../components/features_side_image/FeaturesSideImage'
-import { Footer } from '../components/footer/App'
+import { Footer } from '../components/footer/Footer'
 import { Heros } from '../components/heroes/Heros'
 import { Navbar } from '../components/navbar/Navbar'
 

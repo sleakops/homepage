@@ -9,6 +9,7 @@ import {
   useColorModeValue as mode,
 } from '@chakra-ui/react'
 import * as React from 'react'
+import { Calendly } from '../calendly_button/CalendlyButton'
 import * as Logos from './Brands'
 
 export function Heros() {
@@ -28,7 +29,7 @@ export function Heros() {
             <Text color={mode('gray.600', 'gray.400')} mt="5" fontSize="xl">
               SleakOps relies on the best practices to automate all the repetitive tasks of your scalable applications. Run your apps on the Cloud without worrying about your DevOps support. 
             </Text>
-            <Button
+            <Calendly
               mt="8"
               minW="14rem"
               colorScheme="blue"
@@ -36,10 +37,8 @@ export function Heros() {
               height="14"
               px="8"
               fontSize="md"
-              fontWeight="bold"
-            >
-              BOOK A DEMO
-            </Button>
+              fontWeight="bold"            
+            />
           </Box>
           <Box boxSize={{ base: '20', lg: '8' }} />
           <Img
