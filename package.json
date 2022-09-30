@@ -1,12 +1,15 @@
 {
   "name": "home",
   "version": "0.1.0",
+  "homepage": "https://sleakops.com",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.9",
@@ -18,6 +21,7 @@
     "axios": "^0.27.2",
     "formik": "^2.2.9",
     "framer-motion": "^6",
+    "gh-pages": "^4.0.0",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-calendly": "^4.1.0",
