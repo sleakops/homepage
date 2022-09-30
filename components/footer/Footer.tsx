@@ -7,27 +7,27 @@ import {
   Input,
   Stack,
   Text,
-} from '@chakra-ui/react'
-import * as React from 'react'
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import { Logo } from './Logo'
-import Link from 'next/link'
+} from "@chakra-ui/react";
+import * as React from "react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Logo } from "./Logo";
+import Link from "next/link";
 
 export const Footer = () => (
   <Container as="footer" role="contentinfo">
     <Stack
       spacing="8"
-      direction={{ base: 'column', md: 'row' }}
+      direction={{ base: "column", md: "row" }}
       justify="space-between"
-      py={{ base: '12', md: '16' }}
+      py={{ base: "12", md: "16" }}
     >
-      <Stack spacing={{ base: '6', md: '8' }} align="start">
+      <Stack spacing={{ base: "6", md: "8" }} align="start">
         <Logo />
         {/* <Text color="muted">Esto se va a descontrolar.</Text> */}
       </Stack>
       <Stack
-        direction={{ base: 'column-reverse', md: 'column', lg: 'row' }}
-        spacing={{ base: '12', md: '8' }}
+        direction={{ base: "column-reverse", md: "column", lg: "row" }}
+        spacing={{ base: "12", md: "8" }}
       >
         <Stack direction="row" spacing="8">
           {/* <Stack spacing="4" minW="36" flex="1">
@@ -65,7 +65,6 @@ export const Footer = () => (
             </Button>
           </Stack>
         </Stack> */}
-
       </Stack>
     </Stack>
     <Divider />
@@ -73,13 +72,13 @@ export const Footer = () => (
       pt="8"
       pb="12"
       justify="space-between"
-      direction={{ base: 'column-reverse', md: 'row' }}
+      direction={{ base: "column-reverse", md: "row" }}
       align="center"
     >
       <Text fontSize="sm" color="subtle">
         &copy; {new Date().getFullYear()} SleakOps. All rights reserved. &nbsp;
         <Link href="/privacy-policy" passHref>
-          <a href="/privacy-policy">Privacy and Policy</a>
+          <a>Privacy and Policy</a>
         </Link>
       </Text>
       <ButtonGroup variant="ghost">
@@ -94,4 +93,4 @@ export const Footer = () => (
       </ButtonGroup>
     </Stack>
   </Container>
-)
+);

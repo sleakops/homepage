@@ -10,25 +10,29 @@ import {
   Drawer,
   DrawerContent,
   DrawerOverlay,
-} from '@chakra-ui/react'
-import * as React from 'react'
-import { ToggleButton } from './ToggleButton'
-import { Sidebar } from './Sidebar'
+} from "@chakra-ui/react";
+import * as React from "react";
+import { ToggleButton } from "./ToggleButton";
+import { Sidebar } from "./Sidebar";
 
-import { Logo } from './Logo'
-import Link from 'next/link'
+import { Logo } from "./Logo";
+import Link from "next/link";
 
 export const Navbar = () => {
-  const isDesktop = useBreakpointValue({ base: false, lg: true })
-  const { isOpen, onToggle, onClose } = useDisclosure()
+  const isDesktop = useBreakpointValue({ base: false, lg: true });
+  const { isOpen, onToggle, onClose } = useDisclosure();
 
   return (
     <Box as="section">
-      <Box as="nav" bg="bg-surface" boxShadow={useColorModeValue('sm', 'sm-dark')}>
-        <Container py={{ base: '4', lg: '5' }}>
+      <Box
+        as="nav"
+        bg="bg-surface"
+        boxShadow={useColorModeValue("sm", "sm-dark")}
+      >
+        <Container py={{ base: "4", lg: "5" }}>
           <HStack spacing="10" justify="space-between">
             <Link href="/" passHref>
-              <a href="/">
+              <a>
                 <Logo />
               </a>
             </Link>
@@ -46,16 +50,20 @@ export const Navbar = () => {
                     <Button>Docs</Button>
                   </Link>
                 </ButtonGroup>
-                <HStack spacing="3">                
-                <Link href="https://console.sleakops.com/login" passHref>
-                  <Button variant="ghost">Login</Button>
-                </Link>
+                <HStack spacing="3">
+                  <Link href="https://console.sleakops.com/login" passHref>
+                    <Button variant="ghost">Login</Button>
+                  </Link>
                   {/* <Button variant="primary">Sign up</Button> */}
                 </HStack>
               </>
             ) : (
               <>
-                <ToggleButton isOpen={isOpen} aria-label="Open Menu" onClick={onToggle} />
+                <ToggleButton
+                  isOpen={isOpen}
+                  aria-label="Open Menu"
+                  onClick={onToggle}
+                />
                 <Drawer
                   isOpen={isOpen}
                   placement="left"
@@ -76,5 +84,5 @@ export const Navbar = () => {
         </Container>
       </Box>
     </Box>
-  )
-}
+  );
+};
