@@ -6,6 +6,8 @@ export default class Document extends NextDocument {
     return (
       <Html lang='en'>
         <Head>
+        <meta property="og:title" content="SleakOps - Deploy and Automate your Infra" key="title" />
+        <description>SleakOps relies on the best practices to automate all the repetitive tasks of your scalable applications. Run your apps on the Cloud without worrying about your DevOps support.</description>
           <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         </Head>
         <body>
