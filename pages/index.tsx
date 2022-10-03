@@ -16,7 +16,7 @@ const Home = () => {
       <FeaturesList />
       <FeaturesScreenshot />
       <FeaturesSideImage />
-      <Clients />
+      {/* <Clients /> */}
       <CallToAction />
       <Footer />
     </>
