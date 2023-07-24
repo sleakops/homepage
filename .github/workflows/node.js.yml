@@ -41,4 +41,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action
-        token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+        inputs:
+          token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
