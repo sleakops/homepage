@@ -42,10 +42,10 @@
     "incremental": true,
     "baseUrl": "./src/",
     "paths": {
-      "components/*": ["components/*"],
+      "components/*": ["src/components/*"],
       "contexts/*": ["contexts/*"],
       "hooks/*": ["hooks/*"],
-      "pages/*": ["pages/*"],
+      "pages/*": ["src/pages/*"],
       "utils/": ["utils/*"]
     }
   },
