@@ -7,12 +7,12 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { Footer } from "../components/footer/Footer";
-import { Navbar } from "../components/navbar/Navbar";
+// import { Navbar } from "../components/Navbar/Navbar";
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Box as="section">
         <Box as="section" pb="20">
