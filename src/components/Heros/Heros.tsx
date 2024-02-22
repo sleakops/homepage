@@ -35,7 +35,7 @@ const Heros: FC = () => {
           mb="5"
         >
           <Box flex="1" maxW={{ lg: "xl" }} pt="0">
-            <Heading as="h1" size="3xl" mt="8" fontWeight="extrabold">
+            <Heading as="h1" size="3xl" mt="2" fontWeight="extrabold">
               Lift Your Ideas
               <br />
               to the Clouds,
@@ -47,7 +47,7 @@ const Heros: FC = () => {
             </Text>
             <Box flex="1" pt="10">
               <Link href={DEMO_BUTTON.href} passHref>
-                <Button variant={DEMO_BUTTON.variant}>{DEMO_BUTTON.label}</Button>
+                <Button style={{ height: 45, width: 190 }} variant={DEMO_BUTTON.variant}>{DEMO_BUTTON.label}</Button>
               </Link>
             </Box>
           </Box>
