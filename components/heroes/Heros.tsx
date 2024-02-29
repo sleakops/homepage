@@ -6,6 +6,7 @@ import {
   Img,
   SimpleGrid,
   Text,
+  Highlight,
   useColorModeValue as mode,
 } from "@chakra-ui/react";
 import * as React from "react";
@@ -33,9 +34,21 @@ export function Heros() {
           mb="5"
         >
           <Box flex="1" maxW={{ lg: "xl" }} pt="0">
-            <Heading as="h1" size="3xl" mt="8" fontWeight="extrabold">
-              Deploy and Automate your Infra in AWS
+            
+            <Heading as="h1" size="3xl" mt="8" fontWeight="extrabold" lineHeight='normal'>
+              <>
+                <Highlight query={["Your Ideas", "Journey", "Us"]} 
+                          styles={{ px: '2', py: '0', bg: 'accent' }}>
+                  Lift Your Ideas to the Cloud
+                </Highlight>
+                <br/>
+                <Highlight query={["Journey", "Us"]} 
+                          styles={{ px: '2', py: '0', bg: 'accent' }}>
+                  Leave the Journey to Us.
+                </Highlight>
+              </>
             </Heading>
+            
             <Text color={mode("gray.600", "gray.400")} mt="5" fontSize="xl">
               SleakOps relies on the best practices to automate all the
               repetitive tasks of your scalable applications. Run your apps on
