@@ -25,18 +25,22 @@ const Navbar: FC<{}> = (props) => {
   const {} = props;
   const isDesktop = useBreakpointValue({ base: false, lg: true });
   const { isOpen, onToggle, onClose } = useDisclosure();
-  const HOME_HREF = navbarLinks[0].href;
   return (
     <Box as="section">
       <Box
         as="nav"
         bg="bg-surface"
-        boxShadow={useColorModeValue("sm", "sm-dark")}
+        // position="fixed"
+        // top="0"
+        // left="0"
+        // right="0"
+        // zIndex="10"
+        // boxShadow={useColorModeValue("sm", "sm-dark")}
       >
         <Container py={{ base: "4", lg: "5" }}>
           <HStack spacing="12" justifyContent="space-between">
             <HStack spacing="8">
-              <Link href={HOME_HREF} passHref>
+              <Link style={{ cursor: 'pointer' }} href={'/'} passHref>
                 <Logo />
               </Link>
               {isDesktop && (

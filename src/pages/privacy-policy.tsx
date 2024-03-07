@@ -6,7 +6,7 @@ import {
   Container,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { Footer } from "../components/footer/Footer";
+import { Footer } from "../components/Footer/Footer";
 // import { Navbar } from "../components/Navbar/Navbar";
 
 const PrivacyPolicy = () => {

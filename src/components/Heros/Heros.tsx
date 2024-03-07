@@ -22,6 +22,7 @@ const Heros: FC = () => {
       pt="24"
       pb="10"
       overflow="hidden"
+      h="100vh"
     >
       <Box
         maxW={{ base: "xl", md: "7xl" }}
@@ -35,12 +36,12 @@ const Heros: FC = () => {
           mb="5"
         >
           <Box flex="1" maxW={{ lg: "xl" }} pt="0">
-            <Heading as="h1" size="3xl" mt="2" fontWeight="extrabold">
-              Lift Your Ideas
-              <br />
+            <Heading lineHeight="shorter" as="h1" size="3xl" fontWeight="extrabold">
+              Lift <Text as="span" color="accent"> Your Ideas </Text>
+              <br/>
               to the Clouds,
               <br />
-              Leave the Journey to Us.
+              Leave the <Text as="span" color="accent">Journey</Text> to <Text as="span" color="accent">Us</Text>.
             </Heading>
             <Text color={mode("gray.600", "gray.400")} mt="5" fontSize="xm">
               { HEROS_TEXT }

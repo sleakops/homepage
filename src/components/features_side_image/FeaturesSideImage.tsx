@@ -28,7 +28,7 @@ export const FeaturesSideImage = () => (
               Benefits
             </Text>
             <Heading size={useBreakpointValue({ base: "sm", md: "md" })}>
-              Powered By Craftech
+              Built By Craftech
             </Heading>
           </Stack>
           <Text color="muted" fontSize={{ base: "lg", md: "xl" }}>

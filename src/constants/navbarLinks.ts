@@ -3,23 +3,23 @@ import { paths } from "./paths";
 import { INavbarLink } from "./types";
 
 const navbarLinks: INavbarLink[] = [
+    // {
+    //     label: SOLUTIONS,
+    //     href: paths[SOLUTIONS.toLowerCase()],
+    // },
     {
-        label: SOLUTIONS,
-        href: paths[SOLUTIONS.toLowerCase()],
+        label: PRICING,
+        href: paths[PRICING.toLowerCase()],
     },
     {
         label: DOCS,
         href: paths[DOCS.toLowerCase()],
         isExternal: true
     },
-    {
-        label: PRICING,
-        href: paths[PRICING.toLowerCase()],
-    },
-    {
-        label: BLOG,
-        href: paths[BLOG.toLowerCase()],
-    },
+    // {
+    //     label: BLOG,
+    //     href: paths[BLOG.toLowerCase()],
+    // },
 ];
 
 const navbarButtons: INavbarLink[] = [

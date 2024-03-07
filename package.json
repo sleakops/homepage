@@ -19,6 +19,7 @@
     "@emotion/styled": "^11",
     "@fontsource/inter": "^4.5.12",
     "axios": "^0.27.2",
+    "babel-plugin-styled-components": "^2.1.4",
     "formik": "^2.2.9",
     "framer-motion": "^6",
     "gh-pages": "^4.0.0",
@@ -27,6 +28,7 @@
     "react-calendly": "^4.1.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
+    "react-multi-carousel": "^2.8.4",
     "yup": "^0.32.11"
   },
   "devDependencies": {
