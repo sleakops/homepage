@@ -77,8 +77,18 @@ export const Footer = () => (
     >
       <Text fontSize="sm" color="subtle">
         &copy; {new Date().getFullYear()} SleakOps. All rights reserved. &nbsp;
-        <Link href="/privacy-policy" passHref>
-          <a>Privacy and Policy</a>
+        <Link
+          href="https://craftech.notion.site/Terms-Conditions-efb8d9a980654625af456732ed44b197"
+          passHref
+        >
+          <a>Terms & Conditions</a>
+        </Link>
+        {" - "}
+        <Link
+          href="https://craftech.notion.site/Privacy-Policy-of-SleakOps-55b977da50d84871809879d065b16b3b"
+          passHref
+        >
+          <a>Privacy Policy</a>
         </Link>
       </Text>
       <ButtonGroup variant="ghost">
