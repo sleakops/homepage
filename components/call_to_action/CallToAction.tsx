@@ -8,6 +8,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { Calendly } from "../calendly_button/CalendlyButton";
+import BookDemoButton from "../bookdemo/BookDemoButton";
 
 export const CallToAction = () => (
   <Box as="section" bg="bg-accent" color="on-accent">
@@ -32,11 +33,7 @@ export const CallToAction = () => (
           direction={{ base: "column", sm: "row" }}
           justify="center"
         >
-          {/* <Button variant="secondary-on-accent" size="lg">
-            Learn more
-          </Button> */}
-
-          <Calendly variant="primary-on-accent" size="lg" />
+          <BookDemoButton variant="primary-on-accent" size="lg" />
         </Stack>
       </Stack>
     </Container>

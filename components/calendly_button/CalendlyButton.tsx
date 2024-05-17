@@ -6,6 +6,7 @@ import {
   useRef,
   useState,
 } from "react";
+import Link from "next/link";
 import { PopupButton } from "react-calendly";
 
 export const Calendly = (
@@ -36,21 +37,21 @@ export const Calendly = (
   if (root) {
     return (
       <>
-        <Button {...props} onClick={bookClick}>
+        <Link href="/bookdemo">
+          <Button {...props}>BOOK A DEMO</Button>
+        </Link>
+
+        {/* <Button {...props} onClick={bookClick}>
           BOOK A DEMO
         </Button>
         <Box display="none">
           <PopupButton
             url="https://calendly.com/d/25s-6js-xvh/sleakops-demo-45m"
-            /*
-             * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-             * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-             */
             rootElement={root}
             text="BOOK A DEMO"
             ref={buttonRef}
           />
-        </Box>
+        </Box> */}
       </>
     );
   }
