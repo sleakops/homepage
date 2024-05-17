@@ -12,6 +12,7 @@ import {
 import * as React from "react";
 import { Calendly } from "../calendly_button/CalendlyButton";
 import * as Logos from "./Brands";
+import BookDemoButton from "../bookdemo/BookDemoButton";
 
 export function Heros() {
   return (
@@ -54,7 +55,7 @@ export function Heros() {
               repetitive tasks of your scalable applications. Run your apps on
               the Cloud without worrying about your DevOps support.
             </Text>
-            <Calendly
+            <BookDemoButton
               mt="8"
               minW="14rem"
               colorScheme="blue"
