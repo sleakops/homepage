@@ -50,10 +50,13 @@ export function Heros() {
               </>
             </Heading>
             
-            <Text color={mode("gray.600", "gray.400")} mt="5" fontSize="xl">
-              SleakOps relies on the best practices to automate all the
+            <Text color={mode("gray.600", "gray.400")} mt="5" fontSize="xm">
+              With SleakOps, deploy your applications with confidence. 
+              Our platform is crafted to empower you with the best DevOps practices and a solid cloud foundation. 
+              Simplify your path to innovation and ensure efficient deployment aligned with the industry's highest standards.
+              {/* SleakOps relies on the best practices to automate all the
               repetitive tasks of your scalable applications. Run your apps on
-              the Cloud without worrying about your DevOps support.
+              the Cloud without worrying about your DevOps support. */}
             </Text>
             <BookDemoButton
               mt="8"

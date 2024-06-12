@@ -7,6 +7,7 @@ import { FeaturesSideImage } from '../components/features_side_image/FeaturesSid
 import { Footer } from '../components/footer/Footer'
 import { Heros } from '../components/heroes/Heros'
 import { Navbar } from '../components/navbar/Navbar'
+import { Testimonials } from '../components/testimonials/Testimonials'
 
 const Home = () => {
   return (
@@ -15,8 +16,9 @@ const Home = () => {
       <Heros />
       <FeaturesList />
       <FeaturesScreenshot />
+      <Clients />
       <FeaturesSideImage />
-      {/* <Clients /> */}
+      <Testimonials />
       <CallToAction />
       <Footer />
     </>

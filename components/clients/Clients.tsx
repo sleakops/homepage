@@ -17,7 +17,8 @@ export const Clients = () => (
       <SimpleGrid gap={{ base: '4', md: '8' }} columns={{ base: 2, md: 3, lg: 5 }}>
         {Object.entries(logos).map(([name, Logo]) => (
           <Center key={name}>
-            <Logo h={{ base: '8', md: '10' }} maxW="180px" fill="emphasized" />
+            {/* <Logo h={{ base: '8', md: '10' }} maxW="180px" fill="emphasized" /> */}
+            <Logo/>
           </Center>
         ))}
       </SimpleGrid>

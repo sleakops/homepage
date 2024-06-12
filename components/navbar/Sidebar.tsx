@@ -53,9 +53,11 @@ export const Sidebar = () => (
           <Stack spacing="1">
             <NavButton label="Home" href="/" />
             {/* <NavButton label="How it works" href="/" /> */}
+            <NavButton label="Pricing" href="/pricing" />
             <NavButton label="Contact" href="/contact" />
             <NavButton label="Docs" href="https://docs.sleakops.com" />
-            <NavButton label="Login" href="https://console.sleakops.com/login" />
+            <NavButton label="Sign in" href="https://console.sleakops.com/login" />
+            <NavButton label="Request Demo" href="https://console.sleakops.com/login" />
           </Stack>
         </Stack>
       </Stack>

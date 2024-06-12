@@ -5,7 +5,7 @@ function BookDemoButton(props:any) {
   return (
     <>
       <Link href="/bookdemo">
-        <Button {...props}>BOOK A DEMO</Button>
+        <Button {...props}>Request Demo</Button>
       </Link>
     </>
   );
