@@ -28,17 +28,12 @@ export const FeaturesSideImage = () => (
               Benefits
             </Text>
             <Heading size={useBreakpointValue({ base: "sm", md: "md" })}>
-              Powered By Craftech
+              {/* Built By Craftech */}
+              Unlock the Potential
             </Heading>
           </Stack>
           <Text color="muted" fontSize={{ base: "lg", md: "xl" }}>
-            SleakOps is part of{" "}
-            <Link href="https://craftech.io" passHref>
-              <a>Craftech</a>
-            </Link>
-            , a company specializing in DevOps and Cloud Engineering. We are
-            experts in infrastructure and we based our platform in our knowledge
-            and expertise develop through our experiences in different projects.
+            You can get your Infra running in the Cloud without losing control.
           </Text>
         </Stack>
         <Stack
@@ -91,7 +86,7 @@ export const FeaturesSideImage = () => (
               maxW="100%"
               minH={{ base: "100%", lg: "560px" }}
               objectFit="cover"
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+              src="/images/sleakops2.png"
               alt="Developer"
             />
           </Box>

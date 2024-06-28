@@ -42,9 +42,9 @@ export const Navbar = () => {
               {isDesktop && (
                 <>
                   <ButtonGroup variant="link" spacing="8">
-                    <Link href="/pricing" passHref>
+                    {/* <Link href="/pricing" passHref>
                       <Button>Pricing</Button>
-                    </Link>
+                    </Link> */}
                     <Link href="/contact" passHref>
                       <Button>Contact</Button>
                     </Link>
@@ -67,7 +67,7 @@ export const Navbar = () => {
                   </Link>
                 </HStack>
                 <HStack spacing="3">
-                  <Link href="https://console.sleakops.com/login" passHref>
+                  <Link href="/bookdemo" passHref>
                     <Button variant="primary">Request Demo</Button>
                   </Link>
                   

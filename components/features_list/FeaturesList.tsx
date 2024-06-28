@@ -13,7 +13,8 @@ import * as React from 'react'
 import { features } from './data'
 
 export const FeaturesList = () => (
-  <Box as="section" bg="bg-surface">
+  // <Box as="section" bg="bg-surface">
+  <Box as="section">
     <Container py={{ base: '16', md: '24' }}>
       <Stack spacing={{ base: '12', md: '16' }}>
         <Stack spacing={{ base: '4', md: '5' }} align="center" textAlign="center">
