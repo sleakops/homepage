@@ -4,11 +4,11 @@ import Link from "next/link"
 
 export const Craftech = () => {
   return (
-    <Box bg="gray.800" as="section" minH="140px" position="relative">
-      <Box pt="32" position="relative" zIndex={1}>
+    <Box bg="gray.800" as="section" minH="0" position="relative">
+      <Box py="32" position="relative" zIndex={1}>
       <Box maxW={{ base: 'xl', md: '7xl' }} mx="auto" px={{ base: '6', md: '8' }} color="white">
         <Stack direction={{ base: 'column', md: 'row' }} spacing="16">
-          <Stack spacing={{ base: '6', md: '8' }}>
+          <Stack spacing={{ base: '6', md: '8' }} py={0}>
             <Heading as="h1" size="3xl" fontWeight="extrabold">
               Built By Craftech
             </Heading>
