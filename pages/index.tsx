@@ -7,6 +7,9 @@ import { FeaturesSideImage } from '../components/features_side_image/FeaturesSid
 import { Footer } from '../components/footer/Footer'
 import { Heros } from '../components/heroes/Heros'
 import { Navbar } from '../components/navbar/Navbar'
+import { Testimonials } from '../components/testimonials/Testimonials'
+import { Craftech } from '../components/craftech/Craftech'
+import { Video } from '../components/video/Video'
 
 const Home = () => {
   return (
@@ -14,9 +17,12 @@ const Home = () => {
       <Navbar />
       <Heros />
       <FeaturesList />
-      <FeaturesScreenshot />
+      {/* <FeaturesScreenshot /> */}
+      <Video/>
+      <Testimonials />
       <FeaturesSideImage />
-      {/* <Clients /> */}
+      <Craftech />
+      <Clients />
       <CallToAction />
       <Footer />
     </>

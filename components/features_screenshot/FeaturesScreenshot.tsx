@@ -41,7 +41,28 @@ export const FeaturesScreenshot = () => {
             overflow="hidden"
             boxShadow={useColorModeValue('xl', 'xl-dark')}
           >
-            <picture>
+          <Box
+              as='video'
+              controls
+              src='https://s3.amazonaws.com/crafttech.io/SleakOps.mp4'
+              poster='https://s3.amazonaws.com/crafttech.io/sleakops_play.png'
+              objectFit='contain'
+              sx={{
+                aspectRatio: '16/9'
+              }}
+          />
+
+
+            {/* <Box
+                as='iframe'
+                src='https://www.youtube.com/embed/TMLP5tNliys?si=S1QQBh7c5xdKYZuD'
+                width='100%'
+                sx={{
+                  aspectRatio: '16/9'
+                }}
+            /> */}
+
+            {/* <picture>
               <source
                 srcSet={`/screenshots/console.png`}
                 media="(max-width: 40em)"
@@ -55,7 +76,7 @@ export const FeaturesScreenshot = () => {
                 srcSet={`/screenshots/console.png`}
                 objectFit="cover"
               />
-            </picture>
+            </picture> */}
           </Box>
         </Container>
       </Box>
