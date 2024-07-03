@@ -30,11 +30,11 @@ export const ContactForm = () => {
                 <Text fontSize={{ base: 'sm', md: 'md' }} fontWeight="semibold" color="accent">
                   Contact
                 </Text>
-                <Heading size={useBreakpointValue({ base: 'sm', md: 'md' })}>
+                <Heading size={{ base: 'md', md: 'lg' }} fontWeight="semibold" textAlign="center">
                   Contact us
                 </Heading>
               </Stack>
-              <Text fontSize={{ base: 'lg', md: 'xl' }} maxW="2xl" color="muted">
+              <Text color="fg.muted" textStyle={{ base: 'lg', md: 'xl' }} maxW="3xl" textAlign="center">
                 Let us know what you need, we can surely help you.
               </Text>
             </Stack>

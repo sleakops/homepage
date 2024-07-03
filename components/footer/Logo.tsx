@@ -3,8 +3,8 @@ import React from 'react';
 
 export const Logo = (props: HTMLChakraProps<'svg'>) => (  
   <chakra.svg 
-    viewBox="750 130 470 290" 
-    width="60" 
+    viewBox="500 130 470 290" 
+    width="170px" 
     height="10" 
     color="accent" 
     {...props}

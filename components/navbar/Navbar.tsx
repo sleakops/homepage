@@ -45,10 +45,13 @@ export const Navbar = () => {
                     {/* <Link href="/pricing" passHref>
                       <Button>Pricing</Button>
                     </Link> */}
+                    <Link href="/pricing" passHref>
+                      <Button>Pricing</Button>
+                    </Link>
                     <Link href="/contact" passHref>
                       <Button>Contact</Button>
                     </Link>
-                    <Link href="https://docs.sleakops.com" passHref>
+                    <Link href="https://docs.sleakops.com" passHref target="_blank">
                       <Button>
                         Docs
                         <Icon as={ExternalLinkIcon} ml={2} />

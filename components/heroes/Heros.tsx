@@ -15,7 +15,7 @@ export function Heros() {
     <Box
       as="section"
       bg={mode("gray.50", "gray.800")}
-      pt="24"
+      pt={{ base: "6", md: "24" }}
       pb="10"
       overflow="hidden"
     >
