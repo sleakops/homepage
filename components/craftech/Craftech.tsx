@@ -55,7 +55,7 @@ export const Craftech = () => {
           <Stack spacing={{ base: '6', md: '8' }}>
             <Image
                 mx="auto"
-                maxH={"300"}
+                maxH={300}
                 objectFit="cover"
                 src="/images/craftech_hero.svg"
                 alt="Craftech"
